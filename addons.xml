@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.blurayplays"
+<addon id="plugin.video.BlurayPlay3.0"
        name="[COLOR red][B]BLURAY[/B][/COLOR] [COLOR white][B]PLAY'S[/B][/COLOR]"
-       version="0.8"
+       version="3.0"
        provider-name="[B][COLOR yellow]TIO KENNEDY[/COLOR] [COLOR red]BLURAY[/COLOR] [COLOR white]PLAY'S[/B][/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -15,18 +15,19 @@
     <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.urlresolver"/>
     <import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.livestreamer" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>[B][COLOR gold]FILMES,SERIES EM [COLOR gold]FHD[/COLOR], [COLOR gold]HD[/COLOR], [COLOR gold]SD[/COLOR], [COLOR gold]NOVELAS[/COLOR], [COLOR gold]DOCUMENTARIOS[/COLOR], [COLOR gold]DESENHOS[/COLOR], [COLOR gold]ETC[/COLOR], [COLOR gold]DUBLADOS[/COLOR] e [COLOR gold]Legendados[/COLOR]. O MELHOR ADDON DE FILMES E SERIES PRO SEU KODI!, AQUI VOCÃŠ ENCONTRA TUDO, GARANTIDO!. SenÃ£o ACHA FALA COM NOSSO TEAM[/COLOR][/B]</summary>
-    <description lang="en">[B][COLOR gold]BLURAY PLAY'S Ã‰ Apenas Um AGREGADOR De Links E Assim Como O Google.com, Apenas Agrega E Organiza Os Links Externos. NÃ£o Somos ResponsÃ¡veis Pelos ConteÃºdos Encontrados Aqui... Ateciosamente Team BLURAY PLAY'S[/COLOR][/B]</description>
-    <disclaimer lang="en">[B][COLOR white]O autor nÃ£o hospedar ou distribuir qualquer conteÃºdo exibido por este complemento.[/COLOR][/B] [B][COLOR white]BLURAY PLAY'S[/COLOR][/B] [B][COLOR red]tem nenhuma afiliaÃ§Ã£o com o provedor de conteÃºdo[/COLOR][/B] [B][COLOR gold]somente Ã© responsÃ¡vel por coletar os melhores filmes da Internet, categorizaÃ§Ã£o e otimizÃ¡-los, de modo a que esta ao alcance de seus clientes. tÃ£o fÃ¡cil e descomplicada.[/COLOR][/B]</disclaimer>
+    <description lang="en">[B][COLOR gold]BLURAY PLAY'S Ã‰ Addon Do Kodi, Onde Organizamos Os Conteudos e Upamos Para Nosso Servidor Privado, EntÃ£o Se Quiser Copiar Deixa Os Creditos, Fela Da Puta... Ateciosamente Team BLURAY PLAY'S[/COLOR][/B]</description>
+    <disclaimer lang="en">[B][COLOR white]O autor hospedar o conteÃºdo exibido por este complemento.[/COLOR][/B] [B][COLOR white]BLURAY PLAY'S[/COLOR][/B] [B][COLOR red]tem nenhuma afiliaÃ§Ã£o com o provedor de conteÃºdo[/COLOR][/B] [B][COLOR gold]somente Ã© responsÃ¡vel por coletar os melhores filmes da Internet, categorizaÃ§Ã£o e otimizÃ¡-los, de modo a que esta ao alcance de seus clientes. tÃ£o fÃ¡cil e descomplicada.[/COLOR][/B]</disclaimer>
 	<platform>all</platform>
     <assets>
 	<icon>icon.png</icon>
@@ -98,20 +99,6 @@ Artwork by @konsumer420
         <forum></forum>
         <website>https://github.com/anxdpanic/plugin.video.playthis#playthis</website>
         <source>https://github.com/anxdpanic/plugin.video.playthis</source>
-	</extension>
-</addon>
-
-<addon id="repository.bluraysplays" name="[COLOR white][B]BLURAY[/B][/COLOR] [COLOR gold][B]PLAY'S[/B][/COLOR]" version="0.0.1" provider-name="BLURAY PLAYÂ´S">
-	<extension point="xbmc.addon.repository" name="Demonstration Add-on Repository">
-		<info compressed="false">http://raw.github.com/rauankeneddy/repository.bluraysplays/master/addons.xml</info>
-		<checksum>http://raw.github.com/rauankeneddy/repository.bluraysplays/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/rauankeneddy/repository.bluraysplays/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>BLURAY PLAYÂ´S REPOSITÃ“RIO</summary>
-		<description>Addon Description</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
 	</extension>
 </addon>
 </addons>
