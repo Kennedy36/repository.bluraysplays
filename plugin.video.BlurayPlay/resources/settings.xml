@@ -1,9 +1,9 @@
-<settings>
+﻿<settings>
 <category label="VIP">
 	<setting label="[COLOR white][B]Configurações de Acesso[/B][/COLOR] [COLOR red][B](Vip)[/B][/COLOR]" type="lsep"/>
 	<setting label="[COLOR white][B]Usuário[/B][/COLOR]" id="username" type="text" default="" enable="!eq(-1,false)"/>
 	<setting label="[COLOR white][B]Senha[/B][/COLOR]" id="password" type="text" default="" enable="!eq(-2,false)" option="hidden"/>
-	<setting label="[COLOR white][B]Servidores[/B][/COLOR]" id="dnsvip" type="enum" values="Servidor 1|Servidor 2" default="0" />	
+	<setting label="[COLOR white][B]Servidor[/B][/COLOR]" id="dnsvip" type="enum" values="Servidor 1|Servidor 2" default="0" />	
 	<setting label="[COLOR white][B]Saida de Transmissão VIP[/B][/COLOR]" id="saida" type="enum" values="TS|M3U8" default="0" />
 	<setting label="[COLOR white][B]Executar com[/B][/COLOR]" id="f4mvip" type="enum" values="[COLOR white][B]F4mTester[/B][/COLOR] [COLOR red][B](mais estável, maior delay)[/B][/COLOR]|[COLOR white][B]Padrão[/B][/COLOR] [COLOR yellow][B](menor delay)[/B][/COLOR]" default="1" />
 	<setting label="[COLOR yellow][B]Exibir Menu VIP[/B][/COLOR]" id="exibirvip" type="bool" default="true" />
@@ -49,7 +49,7 @@
 	<setting label="[COLOR white][B]Baixar e Instalar Elementum[/B][/COLOR]" id="elementum" type="bool" default="false" />
 </category>
 <category label="Outros">
-	<setting label="[COLOR lightblue][B]Configurações Gerais:[/COLOR]" type="lsep"/>
+	<setting label="[COLOR lightblue][B]Configurações Gerais:[/B][/COLOR]" type="lsep"/>
 	<setting label="[COLOR white][B]Exibir Mensagem de Boas Vindas[/B][/COLOR]" id="mensagem1" type="bool" default="true" />
 	<setting label="[COLOR white][B]Exibir Mensagem de Status[/B][/COLOR]" id="mensagem2" type="bool" default="true" />
 	<setting label="[COLOR white][B]Exibir Favoritos[/B][/COLOR]" id="favoritos" type="bool" default="false" />
