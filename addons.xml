@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.BlurayPlay" name="[B][COLOR red]BLURAY[/COLOR][/B] [B][COLOR white]PLAY'S[/COLOR][/B]" version="3.2.6" provider-name="[B][COLOR yellow]TEAM[/COLOR] [COLOR white]BLURAY[/COLOR] [COLOR red]PLAY'S[/B][/COLOR]">
+<requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common"/>
+    <import addon="script.module.beautifulsoup"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.simple.downloader"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.urlresolver"/>
+    <import addon="script.module.simplejson"/>
+    <import addon="script.common.plugin.cache"/>
+    <import addon="script.module.metahandler"/>
+</requires>
+
+<extension point="xbmc.python.pluginsource" library="main.py">
+	<provides>video</provides>
+</extension>
+
+<extension point="xbmc.addon.repository" name="Bluray Plays REPO">
+	<info compressed="false">https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons.xml</info>
+	<checksum>https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/rauankeneddy/repository.bluraysplays/master/addons</datadir>
+</extension>
+
+<extension point="xbmc.addon.metadata">
+    <summary>[COLOR white][B]FILMES, SERIES EM FHD, HD, SD, NOVELAS, DOCUMENTARIOS, DESENHOS, ETC, DUBLADOS e Legendados. O MELHOR ADDON DE FILMES E SERIES PRO SEU KODI!, AQUI VOCÊ ENCONTRA TUDO, GARANTIDO!. Se Não ACHA FALA COM NOSSO TEAM.[/B][/COLOR]</summary>
+    <description lang="en">[COLOR red][B]BLURAY PLAY'S É Addon Do Kodi, Onde Organizamos Os Conteudos e Upamos Para Nosso Servidor Privado, Então Se Quiser Copiar Deixa Os Creditos, Fela Da Puta... Ateciosamente Team BLURAY PLAY'S[/B][/COLOR]</description>
+    <disclaimer lang="en">[COLOR yellow][B]O autor hospedar o conteúdo exibido por este complemento. BLURAY PLAY'S tem nenhuma afiliação com o provedor de conteúdo, somente é responsável por coletar os melhores filmes da Internet, categorização e otimizá-los, de modo a que esta ao alcance de seus clientes. tão fácil e descomplicada.[/B][/COLOR]</disclaimer>
+	<platform>all</platform>
+    <assets>
+	<icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources/screenshots/01.jpg</screenshot>
+    <screenshot>resources/screenshots/02.jpg</screenshot>
+    <screenshot>resources/screenshots/03.jpg</screenshot>
+	</assets>
+</extension>
+
+</addon>
+
+<addon id="plugin.video.gdrive" version="0.8.35" name="gdrive" provider-name="ddurdle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image programs</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
+        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.playthis"
+       name="PlayThis"
+       version="3.4.3"
+       provider-name="anxdpanic">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.urlresolver" version="3.4.0"/>
+        <import addon="script.module.youtube.dl"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/__run__.py">
+        <provides>executable video audio image</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>
+- update reddit video resolver
+- fix m3u8 check missing urls with parameters
+- add shout: to direct play
+- filter .css
+- remove unused dialog
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/media/screenshots/screenshot000.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot001.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot002.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot003.jpg</screenshot>
+            <screenshot>resources/media/screenshots/screenshot004.jpg</screenshot>
+        </assets>
+        <summary lang="en_gb">Find and resolve media from a url to play or open.</summary>
+        <description lang="en_gb">
+PlayThis will attempt to find and resolve* media from a url to play or open. A history list is available for future use, exporting to .m3u/.strm** and sending to a remote PlayThis add-on. Supports video, audio, images and executable***.
+* resolves using URLResolver and youtube-dl
+** exported .m3u/.strm is only usable in Kodi w/ PlayThis installed
+*** 'executable' items are urls with potential results available through scraping
+
+Companion browser extension available on the Chrome Web Store and Mozilla's AMO Gallery
+
+Artwork by @konsumer420
+        </description>
+        <language></language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum></forum>
+        <website>https://github.com/anxdpanic/plugin.video.playthis#playthis</website>
+        <source>https://github.com/anxdpanic/plugin.video.playthis</source>
+	</extension>
+</addon>
+
+<addon id="script.module.metahandler"
+     name="metahandler"
+     version="3.0.3"
+     provider-name="Eldorado, jsergio">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="script.module.myconnpy" version="1.1.6"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+  <news>
+Nenhuma, o Palmeiras continua sem MUNDIAL...kkk
+        </news>
+    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+    <description lang="en">Esse Add-on pertence a BUILD TONYWARLLEY, se você instalou esse add-on e não possui a BUILD TONYWARLLEY, está correndo sério risco de ter seu dispositivo infectado por VÍRUS, não baixe Add-ons que não sejam Oficial, Add-ons Oficiais somente no CANAL TONY WARLLEY TUTORIAIS.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="4.0.17" provider-name="Eldorado, tknorris, tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+</addons>
